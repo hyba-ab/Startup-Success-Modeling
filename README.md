@@ -1,4 +1,4 @@
-# Project Title:  What Fuels the Seed? Bayesian Insights From Tunisia
+# Project Title: What Fuels the Seed? Bayesian Insights From Tunisia
 
 **Predicting early-stage venture performance using a hybrid Bayesian modeling approach.**
 
@@ -10,11 +10,12 @@ A **hybrid modeling approach** combining regression analysis and Bayesian method
 This study provides a **probabilistic, evidence-based evaluation framework** that helps investors, accelerators, and policymakers make more informed decisions in emerging markets.
 
 ---
+
 ## 🛠️ Tech Stack
 - **Python Libraries:**
   - Data manipulation: `pandas`, `numpy`  
   - Visualization: `matplotlib`, `seaborn`  
-  - Statistical analysis: `scipy.stats`, `patsy`, `skew`, `boxcox`, `yeojohnson`, `boxcox1p`  
+  - Statistical analysis: `scipy.stats`, `patsy`, `sklearn.preprocessing` (`skew`, `boxcox`, `yeojohnson`, `boxcox1p`)  
   - Bayesian modeling: `pymc`, `arviz`, `pytensor`  
 
 ---
@@ -37,30 +38,47 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
 ## 📊 Dashboard Preview
 
 Here’s a preview of the interactive dashboard developed in this project:
-![Dashboard Overview](dashboard_overview/input widgets.png)
-![Dashboard Overview](dashboard_overview/metrics.png)
-![Dashboard Overview](dashboard_overview/details.png)
-![Dashboard Overview](dashboard_overview/debug.png)
 
-- These visual outputs are designed to support data-driven decision-making by presenting both the predicted values and their associated uncertainty. 
-- By displaying indicators such as RMSE, Bayesian R², AUC, and accuracy, we offer transparent insights into the strengths and limitations of each model, thereby supporting informed interpretation and trust in the predictions generated.
-- An expander was designed to provide insights into the Bayesian modeling approach adopted. This includes the regression types used (linear for revenue, logistic for investment) and the key predictors with informative priors, helping users understand the influence of specific variables on the outcomes.
-- From a technical standpoint, the debugging preprocessors part exposes the preprocessor keys—namely, the feature wise means and standard deviations calculated during model training. These statistics are used to standardize incoming input data, ensuring that user-provided values are scaled consistently with the training dataset. Additionally, the pre-processor includes target variable statistics and thresholds to accurately revert scaled predictions back to their original scale and interpret classification probabilities correctly
+![Input Widgets](dashboard_overview/input_widgets.png)
+![Metrics Overview](dashboard_overview/metrics.png)
+![Details Overview](dashboard_overview/details.png)
+![Debug View](dashboard_overview/debug.png)
 
- 
-## Clone the repository
+- These visual outputs support data-driven decision-making by presenting both predicted values and associated uncertainty. 
+- Indicators such as RMSE, Bayesian R², AUC, and accuracy provide transparent insight into model performance.  
+- The dashboard includes an **expander** to explain the Bayesian modeling approach, including regression types (linear for revenue, logistic for investment) and key predictors with informative priors.  
+- The **debugging preprocessors** section exposes feature-wise means and standard deviations calculated during model training to ensure consistent input scaling and correct interpretation of predictions. Target variable statistics and thresholds are also included to revert scaled predictions to their original scale.
+
+---
+
+## 📂 Setup Instructions
+```markdown
+### 1. Clone the repository
+```bash
 git clone https://github.com/hyba-ab/startup-success-modeling.git
-
-## Navigate to project folder
+   
+git clone https://github.com/hyba-ab/startup-success-modeling.git
+```
+```markdown
+### 2. Navigate to the project folder
+```bash
 cd startup-success-modeling
-
-## (Optional) Create a virtual environment
+```
+```markdown
+### 3. (Optional) Create a virtual environment
+```bash
 python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
-
-## Install dependencies
+source venv/bin/activate (Linux/macOS)
+venv\Scripts\activate (windows)
+```
+```markdown
+### 4. Install dependencies
+```bash
 pip install pandas numpy matplotlib seaborn scipy arviz patsy pymc pytensor jupyter
 
-## Launch Jupyter Notebook
+```
+```markdown
+### 5. Launch Jupyter Notebook
+```bash
 jupyter notebook startup_success_modeling.ipynb
+```
