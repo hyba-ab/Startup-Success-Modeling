@@ -17,7 +17,35 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
   - Statistical analysis: `scipy.stats`, `patsy`, `skew`, `boxcox`, `yeojohnson`, `boxcox1p`  
   - Bayesian modeling: `pymc`, `arviz`, `pytensor`  
 
-## 📂 Project Structure
+---
+
+## 🔍 Key Steps
+1. **Data Cleaning & Preprocessing** – Handle missing values, encode categorical data, normalize features.  
+2. **Exploratory Data Analysis (EDA)** – Visualize trends, correlations, and insights.  
+3. **Predictive Modeling** – Train and evaluate hybrid regression and Bayesian models.  
+4. **Results & Insights** – Highlight key drivers of venture success and actionable recommendations.  
+
+---
+
+## 📈 Key Results
+- Provided **probabilistic predictions** of revenue growth and funding acquisition for early-stage startups.  
+- Found **founder full-time commitment, educational background, technical expertise, and ecosystem support** are significant predictors of success.  
+- Developed **dashboard and visualization tools** for actionable insights.
+
+---
+
+## 📊 Dashboard Preview
+
+Here’s a preview of the interactive dashboard developed in this project:
+
+### Dashboard Overview
+
+
+
+
+
+
+
 
 # Clone the repository
 git clone https://github.com/hyba-ab/startup-success-modeling.git
