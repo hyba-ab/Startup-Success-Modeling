@@ -39,10 +39,10 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
 
 Here’s a preview of the interactive dashboard developed in this project:
 
-![Input Widgets](dashboard_overview/input_widgets.png)
-![Metrics Overview](dashboard_overview/metrics.png)
-![Details Overview](dashboard_overview/details.png)
-![Debug View](dashboard_overview/debug.png)
+![Input Widgets](Dashboard_Overview/input_widgets.png)
+![Metrics Overview](Dashboard_Overview/metrics.png)
+![Details Overview](Dashboard_Overview/details.png)
+![Debug View](Dashboard_Overview/debug.png)
 
 - These visual outputs support data-driven decision-making by presenting both predicted values and associated uncertainty. 
 - Indicators such as RMSE, Bayesian R², AUC, and accuracy provide transparent insight into model performance.  
