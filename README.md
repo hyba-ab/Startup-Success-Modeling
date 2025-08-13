@@ -11,8 +11,31 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
 
 ---
 ## 🛠️ Tech Stack
-- **Python** | Pandas, NumPy  
-- **Machine Learning** | Scikit-learn, Bayesian Modeling  
-- **Visualization** | Matplotlib, Seaborn, Plotly  
-- **Tools** | Jupyter Notebook
+- **Python Libraries:**
+  - Data manipulation: `pandas`, `numpy`  
+  - Visualization: `matplotlib`, `seaborn`  
+  - Statistical analysis: `scipy.stats`, `patsy`, `skew`, `boxcox`, `yeojohnson`, `boxcox1p`  
+  - Bayesian modeling: `pymc`, `arviz`, `pytensor`  
 
+## 📂 Project Structure
+├── startup_success_modeling.ipynb # Main Jupyter Notebook
+├── /data # Dataset folder (optional/sample data)
+├── requirements.txt # Dependencies
+└── README.md # Project description
+
+# Clone the repository
+git clone https://github.com/hyba-ab/startup-success-modeling.git
+
+# Navigate to project folder
+cd startup-success-modeling
+
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install pandas numpy matplotlib seaborn scipy arviz patsy pymc pytensor jupyter
+
+# Launch Jupyter Notebook
+jupyter notebook startup_success_modeling.ipynb
