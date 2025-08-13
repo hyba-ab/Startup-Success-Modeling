@@ -37,27 +37,30 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
 ## 📊 Dashboard Preview
 
 Here’s a preview of the interactive dashboard developed in this project:
-(dashboard_overview/input widgets.png)
+![Dashboard Overview](dashboard_overview/input widgets.png)
+![Dashboard Overview](dashboard_overview/metrics.png)
+![Dashboard Overview](dashboard_overview/details.png)
+![Dashboard Overview](dashboard_overview/debug.png)
 
+- These visual outputs are designed to support data-driven decision-making by presenting both the predicted values and their associated uncertainty. 
+- By displaying indicators such as RMSE, Bayesian R², AUC, and accuracy, we offer transparent insights into the strengths and limitations of each model, thereby supporting informed interpretation and trust in the predictions generated.
+- An expander was designed to provide insights into the Bayesian modeling approach adopted. This includes the regression types used (linear for revenue, logistic for investment) and the key predictors with informative priors, helping users understand the influence of specific variables on the outcomes.
+- From a technical standpoint, the debugging preprocessors part exposes the preprocessor keys—namely, the feature wise means and standard deviations calculated during model training. These statistics are used to standardize incoming input data, ensuring that user-provided values are scaled consistently with the training dataset. Additionally, the pre-processor includes target variable statistics and thresholds to accurately revert scaled predictions back to their original scale and interpret classification probabilities correctly
 
-
-
-
-
-
-# Clone the repository
+ 
+## Clone the repository
 git clone https://github.com/hyba-ab/startup-success-modeling.git
 
-# Navigate to project folder
+## Navigate to project folder
 cd startup-success-modeling
 
-# (Optional) Create a virtual environment
+## (Optional) Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 
-# Install dependencies
+## Install dependencies
 pip install pandas numpy matplotlib seaborn scipy arviz patsy pymc pytensor jupyter
 
-# Launch Jupyter Notebook
+## Launch Jupyter Notebook
 jupyter notebook startup_success_modeling.ipynb
