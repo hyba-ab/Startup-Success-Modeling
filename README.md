@@ -18,10 +18,6 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
   - Bayesian modeling: `pymc`, `arviz`, `pytensor`  
 
 ## 📂 Project Structure
-├── startup_success_modeling.ipynb # Main Jupyter Notebook
-├── /data # Dataset folder (optional/sample data)
-├── requirements.txt # Dependencies
-└── README.md # Project description
 
 # Clone the repository
 git clone https://github.com/hyba-ab/startup-success-modeling.git
