@@ -40,7 +40,7 @@ This study provides a **probabilistic, evidence-based evaluation framework** tha
 Here’s a preview of the interactive dashboard developed in this project:
 
 ![Input Widgets](Dashboard_Overview/input_widgets.png)
-![Prediction Outcome](Dashboard_Overview/prediction outcome.png)
+![Prediction Outcome](Dashboard_Overview/prediction_outcome.png)
 ![Metrics Overview](Dashboard_Overview/metrics.png)
 ![Details Overview](Dashboard_Overview/details.png)
 ![Debug View](Dashboard_Overview/debug.png)
